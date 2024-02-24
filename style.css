@@ -1,0 +1,60 @@
+*{
+    font-family: "Inter", sans-serif;   
+}
+body{
+    background:#F1F0F1;
+}
+header{
+    background: #041d56;
+    height:50px;
+}
+header #Welcome{
+    color:whitesmoke;
+    font-size:18px;
+}
+
+#number{
+    color:#F1F0F1;
+    font-size:100%;
+}
+#secondnavbar{
+    background:whitesmoke;
+    border-bottom:2px solid grey;
+    justify-content: center;
+    height:150px;
+}
+#logo{
+   
+    height:150px;
+    width: 150px;
+}
+#threenavbar{
+    height: 45px;
+    background: #041d56;
+}
+#product{
+    padding-left:50px;
+    font-weight:700;
+   
+    color:white;
+}
+.content1{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap:20px;
+}
+
+.content2{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap:20px;
+}
+#card-item:hover{
+    border:1px solid  #041d56;
+}
+#social-media{
+    display:flex;
+    justify-content: space-between;
+}
