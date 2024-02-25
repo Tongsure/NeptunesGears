@@ -7,8 +7,13 @@ body{
 header{
     background: #041d56;
     height:50px;
+    white-space: nowrap;
+    
    
 }
+/* #header{
+    animation: 15s slide infinite linear;
+} */
 header #Welcome{
     color:whitesmoke;
     font-size:18px;
@@ -21,8 +26,11 @@ header #Welcome{
 #secondnavbar{
     background:whitesmoke;
     border-bottom:2px solid grey;
-    justify-content: center;
+  
     height:150px;
+}
+#secondnavbar img{
+    margin-left:20px;
 }
 #logo{
    
