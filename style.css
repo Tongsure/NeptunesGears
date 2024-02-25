@@ -7,6 +7,7 @@ body{
 header{
     background: #041d56;
     height:50px;
+   
 }
 header #Welcome{
     color:whitesmoke;
@@ -50,6 +51,7 @@ header #Welcome{
     flex-wrap: wrap;
     justify-content: center;
     gap:20px;
+    position: relative;
 }
 #card-item:hover{
     border:1px solid  #041d56;
@@ -57,4 +59,91 @@ header #Welcome{
 #social-media{
     display:flex;
     justify-content: space-between;
+    background-color: #333333   ;
+}
+#text{
+    color:grey;
+    text-decoration: none;
+}
+#Payment{
+    margin:5px;
+}
+#shipping{
+    margin:5px;
+}
+.marks{
+    background-color: rgb(208, 95, 95);
+    width:100px;
+    position: absolute;
+    left:186.8px;
+    padding-left:3px;
+    text-align: center;
+    border-radius: 0px 5px 0px 0px;
+    color:white;
+}
+.markstock{
+    background-color: rgb(112, 166, 31);
+    width:100px;
+    position: absolute;
+    left:186.8px;
+    padding-left:5px;
+    border-radius: 0px 5px 0px 0px;
+    color:white;
+    text-align: center;
+}
+.markSoon{
+    background-color: rgb(186, 186, 95);
+    width:120px;
+    position: absolute;
+    left:166px;
+    padding-left:5px;
+    border-radius: 0px 5px 0px 0px;
+    color:white;
+    text-align: center;
+}
+.logos{
+    height:150px;
+    background:white;
+    overflow: hidden;
+    display:flex;
+    position: relative;
+}
+.logos .logos-slide{
+    display:flex;
+    margin-top:20px;
+    white-space: nowrap;
+    animation: 15s slide infinite linear;
+  
+}
+.logos:before,
+.logos:after{
+    position: absolute;
+    top:0;
+    width:200px;
+    height: 100%;
+    content:"";
+    z-index:2;
+}
+.logos:before{
+   
+    left:0;
+    background:linear-gradient(to left ,transparent,white);
+}
+.logos:after{
+    right:0;
+    background:linear-gradient(to right ,transparent,white);
+}
+.logos:hover .logos-slide{
+    animation-play-state: paused;
+}
+.logos .logos-slide img{
+    margin-left:40px ;
+}
+@keyframes slide{
+    from{
+        transform:translateX(0%);
+    }
+    to{
+        transform:translateX(-100%);
+    }
 }
