@@ -77,7 +77,7 @@ header #Welcome{
     flex-wrap: wrap;
     justify-content: center;
     gap:20px;
-    position: relative;
+   
 }
 #card-item:hover{
     border:1px solid  #041d56;
