@@ -5,7 +5,9 @@ body{
     background:#F1F0F1;
 }
 header{
-    background: #041d56;
+    background-image: linear-gradient(142.56deg, #322C7A 21.68%, #30ABBD 80.35%);
+    background-size: 200% 200%; /* Increase the background size to cover the entire container */
+    animation: gradientAnimation 5s infinite linear; 
     height:50px;
     white-space: nowrap;
     
@@ -14,10 +16,15 @@ header{
 /* #header{
     animation: 15s slide infinite linear;
 } */
+#logo{
+    filter: drop-shadow(rgba(0, 0, 0, 0.35) 0px 5px 15px);
+    
+}
 header #Welcome{
     color:whitesmoke;
     font-size:18px;
 }
+
 
 #number{
     color:#F1F0F1;
@@ -26,20 +33,24 @@ header #Welcome{
 #secondnavbar{
     background:whitesmoke;
     border-bottom:2px solid grey;
-  
     height:150px;
 }
 #secondnavbar img{
     margin-left:20px;
 }
 #logo{
-   
     height:150px;
     width: 150px;
+    animation: 15s ani infinite linear;
+}
+#card-item{
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
 #threenavbar{
     height: 45px;
-    background: #041d56;
+    background-image: linear-gradient(142.56deg, #322C7A 21.68%, #30ABBD 80.35%);
+    animation: gradientAnimation 5s infinite linear; 
+    background-size: 200% 200%;
 }
 #product{
     padding-left:50px;
@@ -55,6 +66,13 @@ header #Welcome{
 }
 
 .content2{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap:20px;
+    position: relative;
+}
+.content3{
     display:flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -103,7 +121,17 @@ header #Welcome{
     background-color: rgb(186, 186, 95);
     width:120px;
     position: absolute;
-    left:166px;
+    left:166.4px;
+    padding-left:5px;
+    border-radius: 0px 5px 0px 0px;
+    color:white;
+    text-align: center;
+}
+.markpreorder{
+    background-color:cornflowerblue;
+    width:120px;
+    position: absolute;
+    left:166.4px;
     padding-left:5px;
     border-radius: 0px 5px 0px 0px;
     color:white;
@@ -120,7 +148,7 @@ header #Welcome{
     display:flex;
     margin-top:20px;
     white-space: nowrap;
-    animation: 15s slide infinite linear;
+    animation: 10s slide infinite linear;
   
 }
 .logos:before,
@@ -153,5 +181,28 @@ header #Welcome{
     }
     to{
         transform:translateX(-100%);
+    }
+}
+@keyframes ani{
+    from {
+        transform: translateY(0%);
+    }
+    30% {
+        transform: translateX(10%);
+    }
+    to {
+        transform: translateX(5%);
+    }
+
+}
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
     }
 }
